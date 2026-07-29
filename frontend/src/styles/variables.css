@@ -1,0 +1,44 @@
+:root {
+  color-scheme: light;
+
+  /* Colors */
+  --bg: #ffffff;
+  --bg-deep: #fff5f5;
+
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-strong: rgba(255, 247, 247, 0.98);
+  --panel-soft: rgba(255, 255, 255, 0.72);
+
+  --border: rgba(184, 28, 28, 0.12);
+
+  --text: #1f2937;
+  --muted: rgba(31, 41, 55, 0.7);
+  --faint: rgba(31, 41, 55, 0.45);
+
+  --accent: #d34d4d;
+  --accent-2: #ef7d7d;
+  --accent-3: #f4b6b6;
+
+  --danger: #cf4e4e;
+  --success: #c94e68;
+
+  /* Shadows */
+  --shadow: 0 26px 70px rgba(190, 52, 52, 0.12);
+
+  /* Border Radius */
+  --radius-xl: 36px;
+  --radius-lg: 28px;
+  --radius-md: 18px;
+  --radius-sm: 14px;
+
+ /* Layout */
+ --frame-max-width: 1000px;
+ --frame-gap: 24px;
+
+  /* Typography */
+  --font-family:
+    "Avenir Next",
+    "Segoe UI",
+    "Trebuchet MS",
+    sans-serif;
+}
