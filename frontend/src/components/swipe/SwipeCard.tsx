@@ -16,7 +16,7 @@ export default function SwipeCard({ card }: SwipeCardProps) {
       {/* Front */}
       <div className={`${styles.cardFace} ${styles.cardFront}`}>
         <div className={styles.cardContent}>
-          <div className={styles.topicChip}>{card.topic}</div>
+          <div className={styles.topicChip}>{"AI in" +" "+card.topic}</div>
 
           <div className={styles.headlineBlock}>
             <h2>{card.headline}</h2>
@@ -61,7 +61,7 @@ export default function SwipeCard({ card }: SwipeCardProps) {
       <div className={`${styles.cardFace} ${styles.cardBack}`}>
         <div className={styles.commentGrid}>
           <div>
-            <div className={styles.topicChip}>{card.topic}</div>
+            <div className={styles.topicChip}>{"AI in " + card.topic}</div>
 
             <h3>What do you think?</h3>
 
@@ -79,7 +79,16 @@ export default function SwipeCard({ card }: SwipeCardProps) {
               id={`comment-${card.id}`}
               placeholder="Add a thought..."
             />
+            <label htmlFor={`background-${card.id}`}>
+              Your Background
+            </label>
+
+            <textarea
+              id={`background-${card.id}`}
+              placeholder="Share your background..."
+            />
           </div>
+
 
           <div className={styles.cardActions}>
             <button

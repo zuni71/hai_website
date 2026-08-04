@@ -233,8 +233,7 @@
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 12px;
-
-  flex: 1;
+  flex:1;
   min-height: 0;
 }
 
@@ -253,10 +252,11 @@
 }
 
 .commentField textarea {
+
   width: 100%;
   min-height: 98px;
 
-  padding: 14px 15px;
+  padding: 14px 14px;
 
   resize: none;
 
@@ -307,8 +307,8 @@
 .positive {
   background: linear-gradient(
     135deg,
-    rgba(31, 41, 55, 0.96),
-    rgba(55, 65, 81, 0.82)
+    rgba(167, 211, 194, 0.952),
+    rgba(113, 165, 113, 0.82)
   );
 
   color: #fff;
@@ -317,8 +317,11 @@
 .negative {
   background: linear-gradient(
     135deg,
+    /*
     rgba(248, 113, 113, 0.92),
-    rgba(251, 191, 36, 0.78)
+    rgba(251, 191, 36, 0.78)*/
+    rgba(252,216,199, 0.92),
+    rgba(232,159,184, 0.938)
   );
 
   color: var(--text);
