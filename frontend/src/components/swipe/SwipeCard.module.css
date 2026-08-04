@@ -110,10 +110,12 @@
   font-size: 1.95rem;
   line-height: 0.94;
   letter-spacing: -0.06em;
+  color: black;
+  font-weight: 700;
 }
 
 .cardCopy {
-  max-width: 30ch;
+  text-align:center;
   margin: 16px 0 0;
 
   color: var(--muted);
