@@ -6,6 +6,13 @@
   height: min(100%, 520px);
   margin-inline: auto;
 
+  touch-action: pan-y;
+  will-change: transform, opacity;
+
+  transition:
+    transform 220ms ease,
+    opacity 220ms ease;
+
   overflow: hidden;
 
   border: 1px solid var(--border);
