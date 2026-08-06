@@ -192,10 +192,6 @@ export default function SwipeCard({ card, onSwipe }: SwipeCardProps) {
               <strong>{card.hope}</strong>
             </div>
 
-            <div className={styles.stat}>
-              <span>Topic</span>
-              <strong>{card.topic}</strong>
-            </div>
           </div>
 
           <div className={styles.swipeHint}>

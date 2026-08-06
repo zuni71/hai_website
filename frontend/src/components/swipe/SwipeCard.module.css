@@ -2,8 +2,8 @@
 
 .card {
   position: relative;
-  width: min(100%, 350px);
-  height: min(100%, 520px);
+  width: min(100%, 300px);
+  height: min(100%, 446px);
   margin-inline: auto;
 
   touch-action: pan-y;
@@ -54,7 +54,7 @@
   display: flex;
   flex-direction: column;
 
-  padding: 20px;
+  padding: 17px;
 
   opacity: 0;
   visibility: hidden;
@@ -93,7 +93,7 @@
 
 .topicChip {
   width: fit-content;
-  padding: 8px 12px;
+  padding: 7px 10px;
 
   border: 1px solid rgba(126, 240, 192, 0.2);
   border-radius: 999px;
@@ -101,20 +101,20 @@
   background: rgba(126, 240, 192, 0.14);
   color: var(--accent);
 
-  font-size: 0.78rem;
+  font-size: 0.68rem;
   letter-spacing: 0.04em;
 }
 
 /* ---------- Front ---------- */
 
 .headlineBlock {
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .card h2 {
   margin: 0;
 
-  font-size: 1.95rem;
+  font-size: 1.45rem;
   line-height: 0.94;
   letter-spacing: -0.06em;
   color: black;
@@ -123,10 +123,10 @@
 
 .cardCopy {
   text-align:center;
-  margin: 16px 0 0;
+  margin: 12px 0 0;
 
   color: var(--muted);
-  font-size: 0.9rem;
+  font-size: 0.78rem;
   line-height: 1.45;
 }
 
@@ -134,18 +134,18 @@
 
 .cardBottom {
   display: grid;
-  gap: 14px;
+  gap: 10px;
 }
 
 .cardStats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
 
 .stat {
   min-width: 0;
-  padding: 12px;
+  padding: 10px;
 
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -159,19 +159,16 @@
 }
 
 .stat span {
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 
   color: var(--faint);
-  font-size: 0.72rem;
+  font-size: 0.64rem;
 }
 
 .stat strong {
-  overflow: hidden;
-
-  font-size: 0.84rem;
-  line-height: 1.1;
-
-  text-overflow: ellipsis;
+  font-size: 0.72rem;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 /* ---------- Swipe Hint ---------- */
@@ -180,19 +177,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 8px;
 
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.68rem;
 }
 
 .swipeSignals {
   display: flex;
-  gap: 8px;
+  gap: 6px;
 }
 
 .signal {
-  padding: 9px 12px;
+  padding: 7px 9px;
 
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -219,18 +216,18 @@
 }
 
 .cardBack h3 {
-  margin: 18px 0 0;
+  margin: 15px 0 0;
 
-  font-size: 1.18rem;
+  font-size: 1rem;
   line-height: 1;
   letter-spacing: -0.03em;
 }
 
 .cardBack p {
-  margin: 8px 0 0;
+  margin: 7px 0 0;
 
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   line-height: 1.45;
 }
 
@@ -239,21 +236,21 @@
 .commentGrid {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: 12px;
+  gap: 8px;
   flex:1;
   min-height: 0;
 }
 
 .commentField {
   display: grid;
-  gap: 8px;
+  gap: 6px;
   min-height: 0;
 }
 
 .commentField label {
   color: var(--muted);
 
-  font-size: 0.74rem;
+  font-size: 0.64rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
@@ -261,9 +258,11 @@
 .commentField textarea {
 
   width: 100%;
-  min-height: 98px;
+  min-height: 76px;
 
-  padding: 14px 14px;
+  padding: 10px;
+
+  font-size: 0.72rem;
 
   resize: none;
 
@@ -287,15 +286,16 @@
 
 .cardActions {
   display: flex;
-  gap: 10px;
+  gap: 8px;
 }
 
 .actionBtn {
   flex: 1;
-  padding: 14px 16px;
+  padding: 10px 12px;
 
   border-radius: var(--radius-md);
 
+  font-size: 0.75rem;
   font-weight: 600;
 
   transition: transform 160ms ease;
@@ -338,15 +338,17 @@
 
 .flipButton {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 12px;
+  right: 12px;
   z-index: 2;
 
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
 
   display: grid;
   place-items: center;
+
+  font-size: 0.8rem;
 
   border: 1px solid var(--border);
   border-radius: 50%;
@@ -363,11 +365,7 @@
 
 @media (max-width: 420px) {
   .cardFace {
-    padding: 18px;
-  }
-
-  .card h2 {
-    font-size: 1.7rem;
+    padding: 16px;
   }
 
   .swipeHint {
